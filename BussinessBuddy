@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta aria-describedby="BusinessBuddy">
+    <link rel="icon" type="image/x-icon" src="C:\Vs code\BusinessBuddy.JPG">
+    <title>BusinessBuddy</title>
+    
+    <style>
+      .button {
+        padding: 15px 25px;
+        font-size: 24px;
+        text-align: center;
+        cursor: pointer;
+        outline: none;
+        color: #fff;
+        background-color: #04AA6D;
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 9px #999;
+      }
+      
+      .button:hover {background-color: #3e8e41;}
+      
+      .button:active {
+        background-color: #3e8e41;
+        box-shadow: 0 5px #666;
+        transform: translateY(4px);
+        
+      }
+      </style>
+
+<style>
+  #scrame.button {
+    padding: 15px 25px;
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: #04AA6D;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+    float:center;
+  }
+  
+  #scrame.button:hover {background-color: #3e8e41;
+    float:center;}
+  
+  #scrame.button:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+    float:center;
+  }
+  </style>
+
+    <style> 
+      #aniamtionbruh {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        border-radius:50%;
+        position: relative;
+        animation-name: example;
+        animation-duration: 5s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-delay:1s;
+        float:right;
+        ;
+      }
+      
+      @keyframes example {
+        0%   {background-color:red; right:0px; top:0px;}
+        25%  {background-color:yellow; right:100px; top:0px;}
+        50%  {background-color:blue; right:100px; top:100px;}
+        75%  {background-color:green; right:0px; top:100px;}
+        100% {background-color:red; right:0px; top:0px;}
+      }
+      </style>
+
+
+  <style>
+   #yt {
+  float:center;
+
+
+  }</style>
+<style>
+  #flipin.body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  #flipin.flip-card {
+    background-color: transparent;
+    width: 200px;
+    height: 200px;
+    perspective: 1000px;
+    
+  }
+  
+  #flipin.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    
+  }
+  
+  #flipin.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+    
+  }
+  
+  #flipin.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  #flipin.flip-card-front {
+    background-color: #bbb;
+    color: black;
+    
+  }
+  
+ #flipin.flip-card-back {
+    background-color: #2980b9;
+    color: white;
+    transform: rotateY(180deg);
+  }
+  </style>
+
+<style>
+  #destroyes.body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  #destroyes.flip-card {
+    background-color: transparent;
+    width: 100px;
+    height: 100px;
+    perspective: 1000px;
+    float: right;
+    
+  }
+  
+  #destroyes.flip-card-inner {
+    position: relative;
+    width: 270%;
+    height: 200%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    float: right;
+    
+  }
+  
+  #destroyes.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+    float: right;
+    
+  }
+  
+  #destroyes.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    float: right;
+  }
+  
+  #destroyes.flip-card-front {
+    background-color: #bbb;
+    color: black;
+    float: right;
+  } 
+  
+  #destroyes.flip-card-back {
+    background-color: #2980b9;
+    color: white;
+    transform: rotateY(180deg);
+    float: right;
+  }
+  </style>
+
+
+
+<style>
+  table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+  </style>
+
+<style>
+  table, th, td {
+    border: 4px solid;
+  }
+  </style>
+
+<style>
+  body {font-family: Arial, Helvetica, sans-serif;}
+  
+  #myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  #myImg:hover {opacity: 0.7;}
+  
+ 
+  .modal {
+    display: none; 
+    position: fixed;
+    z-index: 1; 
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.9); 
+  }
+  
+ 
+  
+  .modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+  }
+  
+ 
+  #caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+  }
+  
+  .modal-content, #caption {  
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+  
+  @-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+  }
+  
+  @keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+  }
+  
+  
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+ 
+  @media only screen and (max-width: 700px){
+    .modal-content {
+      width: 100%;
+    }
+  }
+  </style>
+
+<style>
+  #parralacd.parallax {
+    
+    background-image: url("BusinessBuddy.JPG");
+  
+    
+    min-height: 500px; 
+  
+    
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  </style>
+
+<style>
+  body {
+    padding: 25px;
+    background-color: white;
+    color: black;
+    font-size: 25px;
+  }
+  
+  .dark-mode {
+    background-color: black;
+    color: white;
+  }
+  </style>
+
+<script>
+  $(document).ready(function(){
+    $("a").on('click', function(event) {
+  
+      
+      if (this.hash !== "") {
+        event.preventDefault();
+  
+        // Store hash
+        var hash = this.hash;
+  
+        
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 800, function(){
+     
+          
+          window.location.hash = hash;
+        });
+      } 
+    });
+  });
+  </script>
+  <style>
+  #section1 {
+    height: 1px;
+    background-color: pink;
+  }
+  
+  #section2 {
+    height: 1px;
+    background-color: yellow;
+    float:right;
+  }
+  </style>
+
+<style>
+  
+  a:link {
+   background-color: yellowgreen;
+   color: white;
+   padding: 14px 25px;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+ }
+ 
+ 
+ a:visited {
+   background-color: purple;
+   color: white;
+   padding: 14px 25px;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   
+ }  
+ a:hover{
+   background-color: green;
+   color: white;
+   padding: 14px 25px;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+ 
+ }
+ 
+ 
+ a:active{
+   background-color: blue;
+   color: white;
+   padding: 14px 25px;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+ }
+
+ </style>
+
+<style>
+  body {
+    background-color: skyblue;
+    opacity: 0.999999;
+  }</style>
+
+<style>
+
+  ::-webkit-scrollbar {
+    width: 20px;
+  }
+  
+  
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+    background: grey;
+  }
+   
+  
+  ::-webkit-scrollbar-thumb {
+    background: purple; 
+    border-radius: 10px;
+  }
+  
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: darkblue; 
+  }
+  </style>
+
+
+</head>
+
+<script>
+  alert("Hi! Welcome to BussinessBuddy")
+</script>
+
+  
+        <img src="BusinessBuddy.JPG" >
+     
+  
+        <div id="aniamtionbruh"  ></div>
+
+<h1 style="font-size:70px;">Make an order</h1>
+
+<br></br>
+
+<a href="#section2" >Click Me to Scroll Down</a>
+
+<div class="main" id="section1"></div>
+
+
+<p3 style="font-size:50px;">Hi there want some stickers.</p3>
+<p2 style="font-size:50px;">We have the Best types of stickers.</p2>
+<p1 style="font-size:50px;">The Best Quality stickers.</p1>
+<p3 style="font-size:50px;">All Trending types of stickers</p3>
+<p4 style="font-size:50px;">We Have also custom types of stickers that you can design.</p4>
+<p5 style="font-size:50px;">Everything is in [INR]</p5>
+<p6 style="font-size:50px;">Submit the Form</p6> 
+<p7 style="font-size:50px;">We Also Sell Posters of Neymar,Messi and CR7.</p7>
+        
+<br></br>
+
+        
+<div class="flip-card"  id="destroyes"  >
+  <div class="flip-card-inner" id="destroyes">
+    <div class="flip-card-front" id="destroyes">
+      <img src="spiderfidre.png" alt="Avatar" style="width:270px;height:200px;"  id="destroyes"></div>
+    <div class="flip-card-back" id="destroyes">
+      <h3>Spiderman Epic set</h3> 
+      <p>One of our sticker packs.</p> 
+    </div>
+  </div>
+</div>
+
+      
+        <div class="flip-card"  id="flipin"  >
+          <div class="flip-card-inner" id="flipin">
+            <div class="flip-card-front" id="flipin">
+              <img src="bts.jpg" alt="Avatar" style="width:200px;height:220px;" style="float: right;"  id="flipin"></div>
+            <div class="flip-card-back" id="flipin">
+              <h1>Bts kit</h1> 
+              <p>One of our sticker packs.</p> 
+            </div>
+          </div>
+        </div>
+
+<br></br>
+
+        <button onclick="myFunction()" class="button" id="#scrame">Dark mode</button>
+
+        <script>
+        function myFunction() {
+           var element = document.body;
+           element.classList.toggle("dark-mode");
+
+        }
+        
+        </script>
+
+
+
+
+
+                     <br></br>
+
+              
+
+        <img id="myImg" src="ronaldo.jpg" alt="One of our stickers" style="width:100%;max-width:300px;float:right;">
+
+        <br></br>
+        <div id="myModal" class="modal">
+          <span class="close">&times;</span>
+          <img class="modal-content" id="img01">
+          <div id="caption"></div>
+        </div>
+        
+        <script>
+        
+        var modal = document.getElementById("myModal");
+        
+        
+        var img = document.getElementById("myImg");
+        var modalImg = document.getElementById("img01");
+        var captionText = document.getElementById("caption");
+        img.onclick = function(){
+          modal.style.display = "block";
+          modalImg.src = this.src;
+          captionText.innerHTML = this.alt;
+        }
+        
+        var span = document.getElementsByClassName("close")[0];
+        
+        span.onclick = function() { 
+          modal.style.display = "none";
+        }
+        
+        </script>
+
+         <br></br>
+        
+        <a href="Scratch - Game.htm" class="button" id="scrame" style="float:center;" >Play a Game</a>
+
+        <br></br>
+
+       <p89 style="font-size:50px;">To order fill the form.</p89>
+
+    <table>
+      <tr>
+        <th>Poster</th>
+        <th>Stickers</th>
+        <th>Price</th>
+      </tr>
+      <tr>
+        <td>Messi</td>
+        <td>Messi Epic Set</td>
+        <td>1)40 2)40-30</td>
+      </tr>
+      <tr>
+        <td>CR7</td>
+        <td>Messi Mini Set</td>
+        <td>1)40 2)30-20</td>
+      </tr>
+      <tr>
+        <td>Neymar</td>
+        <td>CR7 Epic Set</td>
+        <td>1)40 2)30-20</td>
+      </tr>
+      <tr>
+        <td>-</td>
+        <td>CR7 Mini Set</td>
+        <td>2)20-10</td>
+      </tr>
+      <tr>
+        <td>-</td>
+        <td>BTS Kit</td>
+        <td>2)40-30</td>
+      </tr>
+      <tr>
+        <td>-</td>
+        <td>Neymar Epic Set</td>
+        <td>2)40-30</td>
+      </tr>
+      <tr>
+        <td>-</td>
+        <td>Neymar Mini Set</td>
+        <td>2)20-10</td>
+      </tr>
+     
+    </table>
+    
+    <br></br>
+
+    <div class="main" id="section2"></div>         
+           
+<iframe id="gooooogle" src="https://docs.google.com/forms/d/e/1FAIpQLSeiCuKWSDhaaB_KOuS0ajTmgOWZF0xI45aKFKzCG-gvwz_o5w/viewform?embedded=true" width="640" height="1046" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+
+
+<style>
+
+  #gooooogle{
+    float: center;
+
+}
+
+</style>
+
+<a href="#section1" >Click Me to Smooth Scroll Above</a>
+
+
+</body>
+</html>
+
+
